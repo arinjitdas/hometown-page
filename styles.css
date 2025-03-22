@@ -1,0 +1,194 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+:root {
+    --div-bg: rgba(2, 11, 35, 0.80);
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Unna;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+#hero {
+   height: 1000px;
+   background: 
+        url('images/background-lalbagh.png'), /* Background image */    
+        linear-gradient(#3D4A77, #999999),
+        rgba(0,0,0,0.1);
+        
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 80px;
+}
+
+#activities {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: auto;
+    gap: 12px;
+}
+
+#box-heading {
+    width: 100%;
+    background-color: var(--div-bg);
+    border-radius: 8px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: start;
+    padding: 0 16px;
+    background-color: var(--div-bg);
+    border-radius: 8px;
+    
+    font-family: "IBM Plex Sans";
+    font-weight: 400;
+    text-align: left;
+}
+
+.content p {
+    flex: 1; /* Makes the paragraph take up remaining space */
+    overflow-y: auto; /* Adds scrollbar if text exceeds space */
+}
+
+.content img {
+    width: 100%; /* Fills the width of the child div */
+    height: 200px; /* Sets a fixed height for images */
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex: 1; /* Takes up remaining space */
+}
+
+.section-guide {
+    padding: 48px 0;
+    background-color: rgba(12,15,32,1);
+}
+
+#guide-card {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 8px;
+    max-width: 640px;
+
+}
+
+#card-content {
+    padding: 24px 24px;
+    background-color: #3D4A77;
+}
+
+/* Font styles and IDs below */
+
+#hero-text {
+    text-align: left;
+    max-width: 1024px;
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 90%;
+}
+
+#namma {
+  color: #F8D622;
+  font-style: italic;
+}
+
+p {
+    line-height: 150%;
+    text-align: left;
+}
+
+#card-content p {
+    font-family: IBM Plex Sans;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+
+}
+
+
+/*Image styles below*/
+
+img {
+    max-width: 400px;
+}
+
+.top3-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#guide-card img {
+    width: 240px;
+    height: auto;
+}
+
+
+
+/*Font style below*/
+
+#box-title {
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+}
+
+#your-guide {
+    font-size: 36px;
+    font-weight: 300;
+    color: #F8D622;
+}
+
+.unna-regular {
+  font-family: "Unna", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.unna-bold {
+  font-family: "Unna", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.unna-regular-italic {
+  font-family: "Unna", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.unna-bold-italic {
+  font-family: "Unna", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
